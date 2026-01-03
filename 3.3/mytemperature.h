@@ -1,6 +1,6 @@
 #pragma once
-//ÉãÊÏÎÂ¶Èµ½»ªÊÏÎÂ¶È
+//æ‘„æ°æ¸©åº¦åˆ°åæ°æ¸©åº¦
 double celsius_to_fah(double cel);
-//»ªÊÏÎÂ¶Èµ½ÉãÊÏÎÂ¶È
+//åæ°æ¸©åº¦åˆ°æ‘„æ°æ¸©åº¦
 double fahrenheit_to_cels(double fah); 
 
