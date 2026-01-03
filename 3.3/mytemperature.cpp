@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
-//ÉãÊÏÎÂ¶Èµ½»ªÊÏÎÂ¶È
+//æ‘„æ°æ¸©åº¦åˆ°åæ°æ¸©åº¦
 double celsius_to_fah(double cel) {
 	return 9.0 * cel / 5.0 + 32.0;
 }
-//»ªÊÏÎÂ¶Èµ½ÉãÊÏÎÂ¶È
+//åæ°æ¸©åº¦åˆ°æ‘„æ°æ¸©åº¦
 double fahrenheit_to_cels(double fah) {
 	return 5.0 * (fah - 32.0) / 9.0;
 	
