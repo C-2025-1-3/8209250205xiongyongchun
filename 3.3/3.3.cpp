@@ -4,22 +4,22 @@ using namespace std;
 #include"mytemperature.h"
 int main() {
 	cout << fixed << setprecision(2);
-	// Êä³ö±íÍ·
+	// è¾“å‡ºè¡¨å¤´
 	cout << "Celsius    Fahrenheit   |   Fahrenheit       Celsius" << endl;
     double cel = 40.0;
     double fah = 120.0;
     while (cel >= 31.0 && fah >= 30.0) {
-        // ¼ÆËã×ª»»½á¹û
+        // è®¡ç®—è½¬æ¢ç»“æœ
         double fah_result = celsius_to_fah(cel);
         double cel_result = fahrenheit_to_cels(fah);
 
-        // Êä³öÒ»ĞĞÊı¾İ£¨×ó²à+·Ö¸ô·û+ÓÒ²à£©
+        // è¾“å‡ºä¸€è¡Œæ•°æ®ï¼ˆå·¦ä¾§+åˆ†éš”ç¬¦+å³ä¾§ï¼‰
         cout << setw(6) << cel << "    "
             << setw(9) << fah_result << "  " << "   |   "
             << setw(10) << fah << "        "
             << setw(6) << cel_result << endl;
 
-        // ¸üĞÂÑ­»·±äÁ¿
+        // æ›´æ–°å¾ªç¯å˜é‡
         cel -= 1.0;
         fah -= 10.0;
     }
