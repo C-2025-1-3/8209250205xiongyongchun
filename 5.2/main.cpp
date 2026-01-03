@@ -9,7 +9,7 @@ int main() {
 
     Student stud1;
     stud1.set_value(1001, "Alice", 'f');
-    cout << "\nstud1µÄĞÅÏ¢£º" << endl;
+    cout << "\nstud1ÂµÃ„ÃÃ…ÃÂ¢Â£Âº" << endl;
     stud1.display();
     return 0;
 
