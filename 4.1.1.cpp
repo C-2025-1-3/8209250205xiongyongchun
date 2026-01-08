@@ -9,17 +9,18 @@ int main() {
         cin >> nums[i];
     }
     cout << "The distinct numbers are:";
-    for (int num : nums) {  // »ùÓÚ·¶Î§µÄforÑ­»·£¨C++11¼°ÒÔÉÏÖ§³Ö£©
-        if (num >= 0 && num < MAX_NUM) {  // È·±£ÊäÈëÔÚ±ê¼ÇÊı×é·¶Î§ÄÚ
-            if (!exists[num]) {           // Èç¹ûÎ´³öÏÖ¹ı
+    for (int num : nums) {  
+        if (num >= 0 && num < MAX_NUM) {  // ç¡®ä¿è¾“å…¥åœ¨æ ‡è®°æ•°ç»„èŒƒå›´å†…
+            if (!exists[num]) {           // å¦‚æœæœªå‡ºç°è¿‡
                 cout << num << " ";
-                exists[num] = true;       // ±ê¼ÇÎªÒÑ³öÏÖ
+                exists[num] = true;       // æ ‡è®°ä¸ºå·²å‡ºç°
             }
         }
         else {
-            cout << "\n¾¯¸æ£ºÊäÈëµÄÊı" << num << "³¬³ö·¶Î§£¨0~" << MAX_NUM - 1 << "£©£¬ÒÑºöÂÔ¡£" << endl;
+            cout << "\nè­¦å‘Šï¼šè¾“å…¥çš„æ•°" << num << "è¶…å‡ºèŒƒå›´ï¼ˆ0~" << MAX_NUM - 1 << "ï¼‰ï¼Œå·²å¿½ç•¥ã€‚" << endl;
         }
     }
 
     return 0;
+
 }
